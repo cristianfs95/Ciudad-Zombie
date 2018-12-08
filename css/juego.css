@@ -1,0 +1,75 @@
+body {
+  background-image: url('../imagenes/fondo.png');
+  overflow: hidden;
+}
+
+canvas {
+  margin: auto;
+  display: flex;
+  margin-top: calc(50vh - 286px);
+    z-index: 1;
+    display: none;
+}
+
+.boton-recargar {
+  display: flex;
+    height: 5vh;
+  margin: auto;
+  background: none;
+    border-radius: 30px;
+  border: 5px solid;
+  color: white;
+  font-family: monospace;
+  visibility: hidden;
+}
+
+.modal-bienvenida {
+    position: absolute;
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    justify-content: center;
+
+}
+
+.modal-bienvenida #msg1 {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-bienvenida #msg2 {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-gameover {
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-gameover #msg-gameover {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-winner {
+    position: absolute;
+    display: none;
+    transform: translate(-0%,-100%);
+    height: 94vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+.modal-winner #msg-winner {
+    display: none;
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+}

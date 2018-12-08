@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Incluir los archivos donde este guardado el estilo en formato css -->
+        <link rel="stylesheet" href="css/juego.css">
+    </head>
+    <body>
+        <div class="modal-bienvenida">
+            <img id="msg1" src="/imagenes/Mensaje1.png" alt="">
+            <img id="msg2" src="/imagenes/Mensaje2.png" alt="">
+        </div>
+        <div class="modal-gameover">
+            <img id="msg-gameover" src="imagenes/mensaje_gameover.png" alt="">
+        </div>
+        <div class="modal-winner">
+            <img id="msg-winner" src="imagenes/Splash.png" alt="">
+        </div>
+        <input type="button" value="< Clic para volver a Jugar >" onClick="window.location.reload()" class="boton-recargar" id="reiniciar">
+
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <!-- Incluir los archivos donde este el codigo Javascript del juego -->
+        <script src='js/modal.js'> </script>
+        <script src='js/resources.js'> </script>
+        <script src='js/jugador.js'> </script>
+        <script src='js/dibujante.js'> </script>
+        <script src='js/obstaculo.js'> </script>
+        <script src='js/enemigo.js'> </script>
+        <script src='js/zombie_caminante.js'></script>
+        <script src='js/zombie_conductor.js'></script>
+        <script src='js/juego.js'> </script>
+    </body>
+</html>
